@@ -1,0 +1,4 @@
+/sbin/ifconfig eth0 33.44.0.2 netmask 255.255.255.252 up
+/sbin/ifconfig eth1 1.44.0.2 netmask 255.255.255.252 up
+/sbin/ifconfig eth2 55.44.0.2 netmask 255.255.255.252 up
+
