@@ -1,0 +1,14 @@
+!
+hostname ripd
+password zebra
+enable password zebra
+!
+access-list blocklist 200.0.0.0/24
+router rip
+redistribute connected
+network 0.0.0.0/0
+no network eth2
+distribute-list blocklist in eth1
+!
+log file /var/log/zebra/ripd.log
+
